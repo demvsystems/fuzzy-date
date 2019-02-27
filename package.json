@@ -81,10 +81,6 @@
       "html"
     ]
   },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
   "eslintConfig": {
     "extends": [
       "airbnb-base",
@@ -112,13 +108,7 @@
       }
     ]
   },
-  "esdoc": {
-    "source": "./src",
-    "destination": "./esdoc",
-    "plugins": [
-      {
-        "name": "esdoc-standard-plugin"
-      }
-    ]
+  "publishConfig": {
+    "access": "public"
   }
 }
