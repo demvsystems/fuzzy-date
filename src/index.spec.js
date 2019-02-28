@@ -1,5 +1,5 @@
 import each from 'lodash/each';
-import { parseDate } from '.';
+import { reformatDate } from '.';
 
 describe('date utility', () => {
   /* eslint-disable quote-props */
@@ -30,7 +30,7 @@ describe('date utility', () => {
 
   each(mapping, (output, input) => {
     it(`parses ${input} as ${output}`, () => {
-      expect(parseDate(input)).toBe(output);
+      expect(reformatDate(input)).toBe(output);
     });
   });
 });
